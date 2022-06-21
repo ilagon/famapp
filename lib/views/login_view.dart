@@ -1,3 +1,4 @@
+import 'package:famapp/components/custom_container.dart';
 import 'package:famapp/constants/color_palette.dart';
 import 'package:flutter/material.dart';
 
@@ -40,13 +41,7 @@ class _LoginViewState extends State<LoginView> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          Container(
-            margin: const EdgeInsets.fromLTRB(25.0, 50.0, 25.0, 25.0),
-            padding: const EdgeInsets.all(30.0),
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-              color: primaryColor,
-            ),
+          CustomContainer(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
