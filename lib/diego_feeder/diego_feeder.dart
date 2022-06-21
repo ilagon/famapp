@@ -26,6 +26,11 @@ class _DiegoFeederState extends State<DiegoFeeder> {
                 style: const TextStyle(color: textColor),
               ),
               TextButton(
+                style: ButtonStyle(
+                  foregroundColor: MaterialStateProperty.all<Color>(textColor),
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(secondaryColor),
+                ),
                 onPressed: () {},
                 child: const Text(
                   "Feed Now",
